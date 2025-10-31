@@ -217,68 +217,6 @@ export default function HomePage() {
             </section>
 
             {/* Summary Section */}
-            <section className="max-w-7xl mx-auto px-6 py-16">
-              <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                <Card className="border-2 border-slate-200 shadow-2xl overflow-hidden">
-                  <div className="bg-gradient-to-r from-slate-800 to-slate-900 px-8 py-6">
-                    <h2 className="text-3xl font-bold text-white text-center">핵심 요약</h2>
-                  </div>
-                  <CardContent className="p-8">
-                    <div className="grid md:grid-cols-3 gap-8">
-                      <motion.div
-                        whileHover={{ scale: 1.05 }}
-                        className="text-center p-6 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl"
-                      >
-                        <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-full flex items-center justify-center">
-                          <Calendar className="w-8 h-8 text-white" />
-                        </div>
-                        <p className="text-sm text-slate-600 mb-2">총 사업 기간 (타겟)</p>
-                        <p className="text-5xl font-extrabold text-indigo-600">
-                          18<span className="text-2xl">개월</span>
-                        </p>
-                      </motion.div>
-
-                      <motion.div
-                        whileHover={{ scale: 1.05 }}
-                        className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl"
-                      >
-                        <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
-                          <DollarSign className="w-8 h-8 text-white" />
-                        </div>
-                        <p className="text-sm text-slate-600 mb-2">목표 저축액</p>
-                        <p className="text-5xl font-extrabold text-green-600">
-                          9,000<span className="text-2xl">만원</span>
-                        </p>
-                      </motion.div>
-
-                      <motion.div
-                        whileHover={{ scale: 1.05 }}
-                        className="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl"
-                      >
-                        <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
-                          <TrendingUp className="w-8 h-8 text-white" />
-                        </div>
-                        <p className="text-sm text-slate-600 mb-2">최종 목표 월수익</p>
-                        <p className="text-5xl font-extrabold text-purple-600">
-                          1,100<span className="text-2xl">만원</span>
-                        </p>
-                      </motion.div>
-                    </div>
-
-                    <p className="text-center text-lg text-slate-700 leading-relaxed mt-8 max-w-3xl mx-auto">
-                      체계적인 단계별 실행, 강력한 브랜딩, 그리고 리스크를 헷지하는 멀티 수익원 확보.
-                      <br />
-                      이 세 가지 축을 기반으로 반드시 <strong className="text-indigo-600">'안정적인 고속 성장'</strong>을 만들어냅니다.
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            </section>
-
             {/* Footer */}
             <footer className="max-w-7xl mx-auto px-6 py-12 text-center border-t">
               <p className="text-slate-500 text-sm">
@@ -1611,7 +1549,7 @@ function OpenView({ onBack, onNavigate, canNavigate, currentIndex, totalPhases }
           <div className="bg-white rounded-2xl p-8">
             <h4 className="text-2xl font-bold mb-6 text-cyan-700">🎯 현재까지 선정 후보</h4>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
               {/* 이문1동 */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -1739,6 +1677,69 @@ function OpenView({ onBack, onNavigate, canNavigate, currentIndex, totalPhases }
                   <p className="text-xs">성장성 중심 | 높은 천장 | 프리미엄 시장</p>
                 </div>
               </motion.div>
+
+              {/* 광장동 (광나루역) */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.7 }}
+                className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-6 border-2 border-emerald-200"
+              >
+                <h5 className="text-2xl font-bold mb-4 text-emerald-900 flex items-center gap-2">
+                  <span className="bg-emerald-600 text-white px-3 py-1 rounded-lg text-base">후보 3</span>
+                  광장동 (광나루역)
+                </h5>
+                <p className="text-xs text-slate-500 mb-4 bg-slate-50 px-2 py-1 rounded">
+                  데이터 출처: 나이스비즈맵 · 음악학원 카테고리
+                </p>
+
+                <div className="space-y-3">
+                  <div className="bg-white p-4 rounded-xl border border-emerald-100">
+                    <p className="text-sm text-slate-600 mb-1">점포 평균 매출</p>
+                    <p className="text-3xl font-bold text-emerald-600">1,708<span className="text-lg">만원/월</span></p>
+                    <p className="text-xs text-green-600 font-semibold mt-1">↑ 25년 9월 기준 (+16.3% 증가)</p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="bg-white p-4 rounded-xl border border-slate-200">
+                      <p className="text-xs text-slate-600 mb-1">중위 50%</p>
+                      <p className="text-xl font-bold text-slate-900">1,469<span className="text-sm">만원</span></p>
+                    </div>
+                    <div className="bg-emerald-100 p-4 rounded-xl border-2 border-emerald-400">
+                      <p className="text-xs text-emerald-700 mb-1 font-semibold">상위 20%</p>
+                      <p className="text-xl font-bold text-emerald-700">2,983<span className="text-sm">만원</span></p>
+                    </div>
+                  </div>
+                  <div className="bg-amber-100 p-4 rounded-xl border-2 border-amber-400">
+                    <p className="text-xs text-amber-800 mb-1 font-semibold">하위 20% 매출</p>
+                    <p className="text-xl font-bold text-amber-700">779<span className="text-sm">만원</span></p>
+                    <p className="text-xs text-amber-600 mt-1">✓ 안정적 기준선 확보</p>
+                  </div>
+                </div>
+
+                <div className="mt-4 space-y-2">
+                  <div className="bg-white p-3 rounded-xl border border-emerald-100 text-xs">
+                    <p className="font-semibold text-slate-700 mb-1">🚇 교통</p>
+                    <p className="text-slate-600">5호선 광나루역 도보 5분 (2.5만명/일)</p>
+                  </div>
+                  <div className="bg-white p-3 rounded-xl border border-emerald-100 text-xs">
+                    <p className="font-semibold text-slate-700 mb-1">🏘️ 주거환경</p>
+                    <p className="text-slate-600">주거인구 3.3만명 · 아파트 9,148호</p>
+                  </div>
+                  <div className="bg-white p-3 rounded-xl border border-emerald-100 text-xs">
+                    <p className="font-semibold text-slate-700 mb-1">💼 직장인구</p>
+                    <p className="text-slate-600">1.8만명 (교육/복지시설 다수)</p>
+                  </div>
+                  <div className="bg-white p-3 rounded-xl border border-emerald-100 text-xs">
+                    <p className="font-semibold text-slate-700 mb-1">📊 매출 특성</p>
+                    <p className="text-slate-600">최고: 수요일 (21.3%) | 최저: 일요일 (0.5%)</p>
+                  </div>
+                </div>
+
+                <div className="mt-4 bg-gradient-to-r from-emerald-600 to-green-600 text-white p-4 rounded-xl">
+                  <p className="text-sm font-bold mb-1">전략적 포지션</p>
+                  <p className="text-xs">균형형 | 안정적 매출 | 40대 타겟 최적</p>
+                </div>
+              </motion.div>
             </div>
 
             {/* 소상공인365 통합 데이터 */}
@@ -1786,7 +1787,7 @@ function OpenView({ onBack, onNavigate, canNavigate, currentIndex, totalPhases }
             >
               <h5 className="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
                 <BarChart3 className="w-6 h-6 text-cyan-600" />
-                이문1동 vs 이문2동 상세 비교
+                이문1동 vs 이문2동 vs 광장동 상세 비교
               </h5>
               <table className="w-full text-sm">
                 <thead>
@@ -1794,6 +1795,7 @@ function OpenView({ onBack, onNavigate, canNavigate, currentIndex, totalPhases }
                     <th className="text-left py-3 px-4 font-bold text-slate-700">비교 항목</th>
                     <th className="text-center py-3 px-4 font-bold text-indigo-700 bg-indigo-50">이문1동 (안정형)</th>
                     <th className="text-center py-3 px-4 font-bold text-violet-700 bg-violet-50">이문2동 (성장형)</th>
+                    <th className="text-center py-3 px-4 font-bold text-emerald-700 bg-emerald-50">광장동 (균형형)</th>
                     <th className="text-center py-3 px-4 font-bold text-slate-600">우위</th>
                   </tr>
                 </thead>
@@ -1801,31 +1803,42 @@ function OpenView({ onBack, onNavigate, canNavigate, currentIndex, totalPhases }
                   <tr className="border-b border-slate-200 hover:bg-slate-50">
                     <td className="py-3 px-4 font-semibold">평균 매출</td>
                     <td className="text-center py-3 px-4 text-indigo-900">1,014만원</td>
-                    <td className="text-center py-3 px-4 text-violet-900 font-bold">1,543만원 (+52%)</td>
+                    <td className="text-center py-3 px-4 text-violet-900">1,543만원</td>
+                    <td className="text-center py-3 px-4 text-emerald-900 font-bold">1,708만원 (+68%)</td>
                     <td className="text-center py-3 px-4">
-                      <span className="bg-violet-100 text-violet-700 px-2 py-1 rounded text-xs font-bold">이문2동</span>
+                      <span className="bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-bold">광장동</span>
                     </td>
                   </tr>
                   <tr className="border-b border-slate-200 hover:bg-slate-50">
                     <td className="py-3 px-4 font-semibold">상위 20%</td>
                     <td className="text-center py-3 px-4 text-indigo-900">1,519만원</td>
-                    <td className="text-center py-3 px-4 text-violet-900 font-bold">2,669만원 (+76%)</td>
+                    <td className="text-center py-3 px-4 text-violet-900">2,669만원</td>
+                    <td className="text-center py-3 px-4 text-emerald-900 font-bold">2,983만원 (+96%)</td>
                     <td className="text-center py-3 px-4">
-                      <span className="bg-violet-100 text-violet-700 px-2 py-1 rounded text-xs font-bold">이문2동</span>
+                      <span className="bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-bold">광장동</span>
                     </td>
                   </tr>
-                  <tr className="border-b border-slate-200 hover:bg-slate-50 bg-green-50">
+                  <tr className="border-b border-slate-200 hover:bg-slate-50">
                     <td className="py-3 px-4 font-semibold">하위 20% (안전성)</td>
-                    <td className="text-center py-3 px-4 text-green-700 font-bold">669만원 ✓</td>
-                    <td className="text-center py-3 px-4 text-amber-700">466만원 ⚠️</td>
+                    <td className="text-center py-3 px-4 text-green-700">669만원</td>
+                    <td className="text-center py-3 px-4 text-amber-700">466만원</td>
+                    <td className="text-center py-3 px-4 text-emerald-700 font-bold">779만원 ✓</td>
                     <td className="text-center py-3 px-4">
-                      <span className="bg-indigo-100 text-indigo-700 px-2 py-1 rounded text-xs font-bold">이문1동</span>
+                      <span className="bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-bold">광장동</span>
                     </td>
+                  </tr>
+                  <tr className="border-b border-slate-200 hover:bg-slate-50">
+                    <td className="py-3 px-4 font-semibold">중위 50%</td>
+                    <td className="text-center py-3 px-4 text-indigo-900">-</td>
+                    <td className="text-center py-3 px-4 text-violet-900">1,493만원</td>
+                    <td className="text-center py-3 px-4 text-emerald-900">1,469만원</td>
+                    <td className="text-center py-3 px-4 text-slate-500 text-xs">-</td>
                   </tr>
                   <tr className="border-b border-slate-200 hover:bg-slate-50">
                     <td className="py-3 px-4 font-semibold">매출 증가율</td>
                     <td className="text-center py-3 px-4 text-indigo-900">+21.4%</td>
                     <td className="text-center py-3 px-4 text-violet-900 font-bold">+77.4%</td>
+                    <td className="text-center py-3 px-4 text-emerald-900">+16.3%</td>
                     <td className="text-center py-3 px-4">
                       <span className="bg-violet-100 text-violet-700 px-2 py-1 rounded text-xs font-bold">이문2동</span>
                     </td>
@@ -1834,18 +1847,21 @@ function OpenView({ onBack, onNavigate, canNavigate, currentIndex, totalPhases }
                     <td className="py-3 px-4 font-semibold">핵심 고객층</td>
                     <td className="text-center py-3 px-4 text-indigo-900 text-xs">40대 남성 주도</td>
                     <td className="text-center py-3 px-4 text-violet-900 text-xs">40대 여성 주도</td>
+                    <td className="text-center py-3 px-4 text-emerald-900 text-xs">여성 40대</td>
                     <td className="text-center py-3 px-4 text-slate-500 text-xs">-</td>
                   </tr>
                   <tr className="border-b border-slate-200 hover:bg-slate-50">
                     <td className="py-3 px-4 font-semibold">상권 특성</td>
                     <td className="text-center py-3 px-4 text-indigo-900 text-xs">주거 97%</td>
                     <td className="text-center py-3 px-4 text-violet-900 text-xs">호황 단계</td>
+                    <td className="text-center py-3 px-4 text-emerald-900 text-xs">주거+교통 결합</td>
                     <td className="text-center py-3 px-4 text-slate-500 text-xs">-</td>
                   </tr>
                   <tr className="border-b border-slate-200 hover:bg-slate-50">
                     <td className="py-3 px-4 font-semibold">경쟁 강도</td>
                     <td className="text-center py-3 px-4 text-indigo-900">낮음 (5곳, 0.9%)</td>
                     <td className="text-center py-3 px-4 text-violet-900">-</td>
+                    <td className="text-center py-3 px-4 text-emerald-900">낮음 (18곳, 0.0%)</td>
                     <td className="text-center py-3 px-4">
                       <span className="bg-indigo-100 text-indigo-700 px-2 py-1 rounded text-xs font-bold">이문1동</span>
                     </td>
@@ -1853,15 +1869,17 @@ function OpenView({ onBack, onNavigate, canNavigate, currentIndex, totalPhases }
                   <tr className="hover:bg-slate-50">
                     <td className="py-3 px-4 font-semibold">추천 전략</td>
                     <td className="text-center py-3 px-4 text-indigo-700 text-xs font-bold">리스크 최소화</td>
-                    <td className="text-center py-3 px-4 text-violet-700 text-xs font-bold">수익 극대화</td>
+                    <td className="text-center py-3 px-4 text-violet-700 text-xs font-bold">성장성 극대화</td>
+                    <td className="text-center py-3 px-4 text-emerald-700 text-xs font-bold">최대 수익 전략</td>
                     <td className="text-center py-3 px-4 text-slate-500 text-xs">상황별</td>
                   </tr>
                 </tbody>
               </table>
               <div className="mt-4 bg-gradient-to-r from-cyan-50 to-blue-50 rounded-xl p-4">
                 <p className="text-sm text-slate-700">
-                  <strong className="text-cyan-700">💡 선택 가이드:</strong> Phase 1 성과가 좋고 적극적 확장을 원한다면 <strong className="text-violet-700">이문2동</strong>,
-                  안정적 운영과 리스크 관리를 우선한다면 <strong className="text-indigo-700">이문1동</strong> 추천
+                  <strong className="text-cyan-700">💡 선택 가이드:</strong> 최대 수익을 추구한다면 <strong className="text-emerald-700">광장동 (평균 1,708만원, 상위 2,983만원)</strong>,
+                  성장성과 안정성을 모두 원한다면 <strong className="text-violet-700">이문2동 (+77.4% 성장)</strong>,
+                  리스크 최소화가 우선이라면 <strong className="text-indigo-700">이문1동 (하위 669만원 보장)</strong> 추천
                 </p>
               </div>
             </motion.div>
@@ -1874,7 +1892,7 @@ function OpenView({ onBack, onNavigate, canNavigate, currentIndex, totalPhases }
               className="mt-6 bg-gradient-to-r from-cyan-600 to-blue-600 text-white p-6 rounded-2xl"
             >
               <h5 className="text-xl font-bold mb-4">💡 종합 분석 및 전략</h5>
-              <div className="grid md:grid-cols-2 gap-4 mb-4">
+              <div className="grid md:grid-cols-3 gap-4 mb-4">
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
                   <p className="text-sm font-bold mb-2 text-yellow-300">이문1동 - 안정성 전략</p>
                   <ul className="text-xs space-y-1 text-cyan-50">
@@ -1893,14 +1911,24 @@ function OpenView({ onBack, onNavigate, canNavigate, currentIndex, totalPhases }
                     <li>⚠️ 하위 466만원 → 운영 역량 중요</li>
                   </ul>
                 </div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                  <p className="text-sm font-bold mb-2 text-yellow-300">광장동 - 최대 수익 전략</p>
+                  <ul className="text-xs space-y-1 text-cyan-50">
+                    <li>🔥 평균 1,708만원 → 이문1동 대비 +68%</li>
+                    <li>🔥 상위 20% 2,983만원 → 최고 수익 가능</li>
+                    <li>✓ 하위 779만원 → 이문1동 수준 안정성</li>
+                    <li>✓ 광나루역 5호선 → 접근성 우수</li>
+                  </ul>
+                </div>
               </div>
               <div className="bg-white/20 backdrop-blur-sm rounded-xl p-4">
                 <p className="text-sm font-bold mb-2 text-white">🎯 최종 결론</p>
                 <p className="text-xs text-cyan-50 leading-relaxed">
                   <strong className="text-white">Phase 1 성과에 따라 선택:</strong><br/>
-                  • Phase 1에서 안정적 성장 → 이문2동 (높은 수익 목표)<br/>
-                  • Phase 1에서 보수적 접근 필요 → 이문1동 (낮은 리스크)<br/>
-                  • 두 후보지 모두 15만 유동인구 + 1만 세대 아파트 단지 인접 ✓
+                  • 최대 수익 추구 → 광장동 (평균 1,708만원, 상위 2,983만원)<br/>
+                  • 성장+안정 균형 → 이문2동 (높은 성장세 +77.4%)<br/>
+                  • 리스크 최소화 → 이문1동 (하위 669만원, 안정적)<br/>
+                  • 세 후보지 모두 교통 접근성 우수 ✓
                 </p>
               </div>
             </motion.div>

@@ -64,9 +64,9 @@ export default function Phase2ScenarioPage() {
         </div>
 
         {/* Canvas */}
-        <div className="relative w-full h-[5400px] bg-slate-900/50 rounded-2xl border border-slate-800 overflow-hidden">
+        <div className="relative w-full h-[3400px] bg-slate-900/50 rounded-2xl border border-slate-800 overflow-hidden">
           {/* SVG 연결선 */}
-          <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 1600 5400" preserveAspectRatio="xMidYMin slice" style={{ zIndex: 1 }}>
+          <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 1600 3400" preserveAspectRatio="xMidYMin slice" style={{ zIndex: 1 }}>
             <defs>
               <linearGradient id="line2" x1="0%" y1="0%" x2="0%" y2="100%">
                 <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.8" />
@@ -90,7 +90,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              d="M 800 280 Q 600 310 200 340"
+              d="M 800 280 Q 520 425 240 570"
               stroke="#10b981"
               strokeWidth="2.5"
               fill="none"
@@ -99,7 +99,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.9 }}
-              d="M 800 280 Q 700 310 500 340"
+              d="M 800 280 Q 688 425 576 570"
               stroke="#f59e0b"
               strokeWidth="2.5"
               fill="none"
@@ -108,8 +108,8 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.0 }}
-              d="M 800 280 Q 900 310 1100 340"
-              stroke="#ff6b35"
+              d="M 800 280 Q 856 425 912 570"
+              stroke="#f97316"
               strokeWidth="2.5"
               fill="none"
             />
@@ -117,7 +117,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.1 }}
-              d="M 800 280 Q 1000 310 1400 340"
+              d="M 800 280 Q 1024 425 1248 570"
               stroke="#dc2626"
               strokeWidth="2.5"
               fill="none"
@@ -128,7 +128,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 1.3 }}
-              d="M 200 390 Q 400 490 800 600"
+              d="M 240 650 Q 450 712 800 835"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -138,7 +138,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 1.4 }}
-              d="M 500 390 Q 600 490 800 600"
+              d="M 576 650 Q 650 712 800 835"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -148,7 +148,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 1.5 }}
-              d="M 1100 390 Q 1000 490 800 600"
+              d="M 912 650 Q 870 712 800 835"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -158,7 +158,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 1.6 }}
-              d="M 1400 390 Q 1200 490 800 600"
+              d="M 1248 650 Q 1050 712 800 835"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -170,7 +170,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.7 }}
-              d="M 800 680 Q 600 710 200 740"
+              d="M 800 875 Q 520 1010 240 1145"
               stroke="#10b981"
               strokeWidth="2.5"
               fill="none"
@@ -179,7 +179,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.8 }}
-              d="M 800 680 Q 700 710 500 740"
+              d="M 800 875 Q 688 1010 576 1145"
               stroke="#f59e0b"
               strokeWidth="2.5"
               fill="none"
@@ -188,8 +188,8 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.9 }}
-              d="M 800 680 Q 900 710 1100 740"
-              stroke="#ff6b35"
+              d="M 800 875 Q 856 1010 912 1145"
+              stroke="#f97316"
               strokeWidth="2.5"
               fill="none"
             />
@@ -197,7 +197,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 2.0 }}
-              d="M 800 680 Q 1000 710 1400 740"
+              d="M 800 875 Q 1024 1010 1248 1145"
               stroke="#dc2626"
               strokeWidth="2.5"
               fill="none"
@@ -208,7 +208,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 2.2 }}
-              d="M 200 790 Q 400 850 800 920"
+              d="M 240 1225 Q 450 1287 800 1410"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -218,7 +218,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 2.3 }}
-              d="M 500 790 Q 600 850 800 920"
+              d="M 576 1225 Q 650 1287 800 1410"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -228,7 +228,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 2.4 }}
-              d="M 1100 790 Q 1000 850 800 920"
+              d="M 912 1225 Q 870 1287 800 1410"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -238,7 +238,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 2.5 }}
-              d="M 1400 790 Q 1200 850 800 920"
+              d="M 1248 1225 Q 1050 1287 800 1410"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -250,7 +250,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 2.4 }}
-              d="M 800 1000 Q 600 1030 200 1060"
+              d="M 800 1450 Q 520 1585 240 1720"
               stroke="#10b981"
               strokeWidth="2.5"
               fill="none"
@@ -259,7 +259,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 2.5 }}
-              d="M 800 1000 Q 700 1030 500 1060"
+              d="M 800 1450 Q 688 1585 576 1720"
               stroke="#f59e0b"
               strokeWidth="2.5"
               fill="none"
@@ -268,8 +268,8 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 2.6 }}
-              d="M 800 1000 Q 900 1030 1100 1060"
-              stroke="#ef4444"
+              d="M 800 1450 Q 856 1585 912 1720"
+              stroke="#dc2626"
               strokeWidth="2.5"
               fill="none"
             />
@@ -277,7 +277,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 2.7 }}
-              d="M 800 1000 Q 1000 1030 1400 1060"
+              d="M 800 1450 Q 1024 1585 1248 1720"
               stroke="#dc2626"
               strokeWidth="2.5"
               fill="none"
@@ -288,7 +288,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 3.0 }}
-              d="M 200 1110 Q 400 1170 800 1240"
+              d="M 240 1800 Q 450 1862 800 1985"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -298,7 +298,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 3.1 }}
-              d="M 500 1110 Q 600 1170 800 1240"
+              d="M 576 1800 Q 650 1862 800 1985"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -308,7 +308,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 3.2 }}
-              d="M 1100 1110 Q 1000 1170 800 1240"
+              d="M 912 1800 Q 870 1862 800 1985"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -318,7 +318,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 3.3 }}
-              d="M 1400 1110 Q 1200 1170 800 1240"
+              d="M 1248 1800 Q 1050 1862 800 1985"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -330,7 +330,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 3.4 }}
-              d="M 800 1320 Q 600 1350 200 1380"
+              d="M 800 2025 Q 520 2160 240 2295"
               stroke="#10b981"
               strokeWidth="2.5"
               fill="none"
@@ -339,7 +339,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 3.5 }}
-              d="M 800 1320 Q 700 1350 500 1380"
+              d="M 800 2025 Q 688 2160 576 2295"
               stroke="#f59e0b"
               strokeWidth="2.5"
               fill="none"
@@ -348,8 +348,8 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 3.6 }}
-              d="M 800 1320 Q 900 1350 1100 1380"
-              stroke="#ef4444"
+              d="M 800 2025 Q 856 2160 912 2295"
+              stroke="#dc2626"
               strokeWidth="2.5"
               fill="none"
             />
@@ -357,7 +357,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 3.7 }}
-              d="M 800 1320 Q 1000 1350 1400 1380"
+              d="M 800 2025 Q 1024 2160 1248 2295"
               stroke="#dc2626"
               strokeWidth="2.5"
               fill="none"
@@ -368,7 +368,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 4.0 }}
-              d="M 200 1430 Q 400 1510 800 1600"
+              d="M 240 2375 Q 450 2437 800 2560"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -378,7 +378,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 4.1 }}
-              d="M 500 1430 Q 600 1510 800 1600"
+              d="M 576 2375 Q 650 2437 800 2560"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -388,7 +388,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 4.2 }}
-              d="M 1100 1430 Q 1000 1510 800 1600"
+              d="M 912 2375 Q 870 2437 800 2560"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -398,7 +398,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 0.4 }}
               transition={{ duration: 0.5, delay: 4.3 }}
-              d="M 1400 1430 Q 1200 1510 800 1600"
+              d="M 1248 2375 Q 1050 2437 800 2560"
               stroke="#3b82f6"
               strokeWidth="2"
               strokeDasharray="4,4"
@@ -410,7 +410,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 4.2 }}
-              x1="800" y1="1680" x2="800" y2="1800"
+              x1="800" y1="2600" x2="800" y2="2745"
               stroke="#3b82f6"
               strokeWidth="2.5"
               strokeLinecap="round"
@@ -421,7 +421,7 @@ export default function Phase2ScenarioPage() {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 0.8, delay: 4.6 }}
-              d="M 800 1880 L 800 2030"
+              d="M 800 2825 L 800 3155"
               stroke="#10b981"
               strokeWidth="3"
               fill="none"
@@ -507,7 +507,7 @@ export default function Phase2ScenarioPage() {
               className="absolute left-[6%] top-[570px]"
               style={{ width: '18%' }}
             >
-              <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-3 shadow-[0_0_30px_rgba(16,185,129,0.4)] border-2 border-green-400/40 hover:scale-105 transition-transform cursor-pointer">
+              <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-4 shadow-[0_0_30px_rgba(16,185,129,0.4)] border-2 border-green-400/40 hover:scale-105 transition-transform cursor-pointer">
                 <div className="text-center mb-2">
                   <div className="text-2xl mb-1">✓</div>
                   <p className="text-sm font-black">32명 이상</p>
@@ -530,7 +530,7 @@ export default function Phase2ScenarioPage() {
             >
               <div
                 onClick={() => setOpenDialog('m1-planb')}
-                className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg p-3 shadow-[0_0_30px_rgba(245,158,11,0.4)] border-2 border-amber-400/40 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg p-4 shadow-[0_0_30px_rgba(245,158,11,0.4)] border-2 border-amber-400/40 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-lg mb-1">⚠️</div>
@@ -555,7 +555,7 @@ export default function Phase2ScenarioPage() {
             >
               <div
                 onClick={() => setOpenDialog('m1-planc')}
-                className="bg-gradient-to-br from-orange-500 to-red-500 rounded-lg p-3 shadow-[0_0_30px_rgba(249,115,22,0.4)] border-2 border-orange-400/40 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-orange-500 to-red-600 rounded-lg p-4 shadow-[0_0_30px_rgba(249,115,22,0.4)] border-2 border-orange-400/40 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-lg mb-1">🔶</div>
@@ -580,7 +580,7 @@ export default function Phase2ScenarioPage() {
             >
               <div
                 onClick={() => setOpenDialog('m1-pland')}
-                className="bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-3 shadow-[0_0_30px_rgba(220,38,38,0.5)] border-2 border-red-500/50 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-4 shadow-[0_0_30px_rgba(220,38,38,0.5)] border-2 border-red-500/50 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-lg mb-1">🚨</div>
@@ -600,7 +600,7 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.4 }}
-              className="absolute left-1/2 top-[1020px] -translate-x-1/2"
+              className="absolute left-1/2 top-[795px] -translate-x-1/2"
               style={{ width: '380px' }}
             >
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-4 shadow-[0_0_35px_rgba(59,130,246,0.5)] border-2 border-blue-400/50">
@@ -648,12 +648,12 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1.7 }}
-              className="absolute left-[6%] top-[1370px]"
+              className="absolute left-[6%] top-[1145px]"
               style={{ width: '18%' }}
             >
               <div
                 onClick={() => handleSelect('m1_2', 'success')}
-                className={`bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-3 shadow-[0_0_30px_rgba(16,185,129,0.4)] border-2 ${
+                className={`bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-4 shadow-[0_0_30px_rgba(16,185,129,0.4)] border-2 ${
                   selections.phase2.m1_2 === 'success' ? 'border-green-300 ring-4 ring-green-400/50' : 'border-green-400/40'
                 } hover:scale-105 transition-transform cursor-pointer`}
               >
@@ -677,12 +677,12 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.8 }}
-              className="absolute left-[27%] top-[1370px]"
+              className="absolute left-[27%] top-[1145px]"
               style={{ width: '18%' }}
             >
               <div
                 onClick={() => setOpenDialog('m2-planb')}
-                className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg p-3 shadow-[0_0_30px_rgba(245,158,11,0.4)] border-2 border-amber-400/40 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg p-4 shadow-[0_0_30px_rgba(245,158,11,0.4)] border-2 border-amber-400/40 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-lg mb-1">⚠️</div>
@@ -702,12 +702,12 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.9 }}
-              className="absolute left-[48%] top-[1370px]"
+              className="absolute left-[48%] top-[1145px]"
               style={{ width: '18%' }}
             >
               <div
                 onClick={() => setOpenDialog('m2-planc')}
-                className="bg-gradient-to-br from-orange-500 to-red-500 rounded-lg p-3 shadow-[0_0_30px_rgba(249,115,22,0.4)] border-2 border-orange-400/40 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-orange-500 to-red-600 rounded-lg p-4 shadow-[0_0_30px_rgba(249,115,22,0.4)] border-2 border-orange-400/40 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-lg mb-1">🔶</div>
@@ -727,12 +727,12 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 2.0 }}
-              className="absolute left-[69%] top-[1370px]"
+              className="absolute left-[69%] top-[1145px]"
               style={{ width: '18%' }}
             >
               <div
                 onClick={() => setOpenDialog('m2-pland')}
-                className="bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-3 shadow-[0_0_30px_rgba(220,38,38,0.5)] border-2 border-red-500/50 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-4 shadow-[0_0_30px_rgba(220,38,38,0.5)] border-2 border-red-500/50 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-lg mb-1">🚨</div>
@@ -752,7 +752,7 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2.2 }}
-              className="absolute left-1/2 top-[1820px] -translate-x-1/2"
+              className="absolute left-1/2 top-[1370px] -translate-x-1/2"
               style={{ width: '380px' }}
             >
               <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl p-4 shadow-[0_0_35px_rgba(99,102,241,0.5)] border-2 border-indigo-400/50">
@@ -800,10 +800,10 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 2.4 }}
-              className="absolute left-[6%] top-[2170px]"
+              className="absolute left-[6%] top-[1720px]"
               style={{ width: '18%' }}
             >
-              <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-3 shadow-[0_0_30px_rgba(16,185,129,0.4)] border-2 border-green-400/40 hover:scale-105 transition-transform cursor-pointer">
+              <div className="bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-4 shadow-[0_0_30px_rgba(16,185,129,0.4)] border-2 border-green-400/40 hover:scale-105 transition-transform cursor-pointer">
                 <div className="text-center mb-2">
                   <div className="text-2xl mb-1">✓</div>
                   <p className="text-sm font-black">45명 이상</p>
@@ -821,12 +821,12 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2.5 }}
-              className="absolute left-[27%] top-[2170px]"
+              className="absolute left-[27%] top-[1720px]"
               style={{ width: '18%' }}
             >
               <div
                 onClick={() => setOpenDialog('m3-planb')}
-                className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg p-3 shadow-[0_0_30px_rgba(245,158,11,0.4)] border-2 border-amber-400/40 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg p-4 shadow-[0_0_30px_rgba(245,158,11,0.4)] border-2 border-amber-400/40 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-xl mb-1">⚠️</div>
@@ -846,12 +846,12 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2.6 }}
-              className="absolute left-[48%] top-[2170px]"
+              className="absolute left-[48%] top-[1720px]"
               style={{ width: '18%' }}
             >
               <div
                 onClick={() => setOpenDialog('m3-planc')}
-                className="bg-gradient-to-br from-orange-500 to-red-500 rounded-lg p-3 shadow-[0_0_30px_rgba(249,115,22,0.4)] border-2 border-orange-400/40 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-orange-500 to-red-600 rounded-lg p-4 shadow-[0_0_30px_rgba(249,115,22,0.4)] border-2 border-orange-400/40 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-lg mb-1">🔶</div>
@@ -871,12 +871,12 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 2.7 }}
-              className="absolute left-[69%] top-[2170px]"
+              className="absolute left-[69%] top-[1720px]"
               style={{ width: '18%' }}
             >
               <div
                 onClick={() => setOpenDialog('m3-pland')}
-                className="bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-3 shadow-[0_0_30px_rgba(220,38,38,0.5)] border-2 border-red-500/50 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-4 shadow-[0_0_30px_rgba(220,38,38,0.5)] border-2 border-red-500/50 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-lg mb-1">🚨</div>
@@ -896,7 +896,7 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 3.0 }}
-              className="absolute left-1/2 top-[2620px] -translate-x-1/2"
+              className="absolute left-1/2 top-[1945px] -translate-x-1/2"
               style={{ width: '400px' }}
             >
               <div className="bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 rounded-xl p-4 shadow-[0_0_50px_rgba(234,179,8,0.6)] border-3 border-yellow-400/60">
@@ -944,12 +944,12 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 3.4 }}
-              className="absolute left-[6%] top-[2970px]"
+              className="absolute left-[6%] top-[2295px]"
               style={{ width: '18%' }}
             >
               <div
                 onClick={() => handleSelect('m3_6', 'success')}
-                className={`bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-3 shadow-[0_0_40px_rgba(16,185,129,0.5)] border-2 ${
+                className={`bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-4 shadow-[0_0_40px_rgba(16,185,129,0.5)] border-2 ${
                   selections.phase2.m3_6 === 'success' ? 'border-green-300 ring-4 ring-green-400/50' : 'border-green-400/50'
                 } hover:scale-105 transition-transform cursor-pointer`}
               >
@@ -973,12 +973,12 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 3.5 }}
-              className="absolute left-[27%] top-[2970px]"
+              className="absolute left-[27%] top-[2295px]"
               style={{ width: '18%' }}
             >
               <div
                 onClick={() => setOpenDialog('m4-planb')}
-                className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg p-3 shadow-[0_0_30px_rgba(245,158,11,0.4)] border-2 border-amber-400/40 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-lg p-4 shadow-[0_0_30px_rgba(245,158,11,0.4)] border-2 border-amber-400/40 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-xl mb-1">⚠️</div>
@@ -998,12 +998,12 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 3.6 }}
-              className="absolute left-[48%] top-[2970px]"
+              className="absolute left-[48%] top-[2295px]"
               style={{ width: '18%' }}
             >
               <div
                 onClick={() => setOpenDialog('m4-planc')}
-                className="bg-gradient-to-br from-orange-500 to-red-500 rounded-lg p-3 shadow-[0_0_30px_rgba(249,115,22,0.4)] border-2 border-orange-400/40 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-orange-500 to-red-600 rounded-lg p-4 shadow-[0_0_30px_rgba(249,115,22,0.4)] border-2 border-orange-400/40 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-lg mb-1">🔶</div>
@@ -1023,12 +1023,12 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 3.7 }}
-              className="absolute left-[69%] top-[2970px]"
+              className="absolute left-[69%] top-[2295px]"
               style={{ width: '18%' }}
             >
               <div
                 onClick={() => setOpenDialog('m4-pland')}
-                className="bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-3 shadow-[0_0_30px_rgba(220,38,38,0.5)] border-2 border-red-500/50 hover:scale-105 transition-transform cursor-pointer"
+                className="bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-4 shadow-[0_0_30px_rgba(220,38,38,0.5)] border-2 border-red-500/50 hover:scale-105 transition-transform cursor-pointer"
               >
                 <div className="text-center mb-2">
                   <div className="text-lg mb-1">🚨</div>
@@ -1048,7 +1048,7 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 4.0 }}
-              className="absolute left-1/2 top-[3420px] -translate-x-1/2"
+              className="absolute left-1/2 top-[2520px] -translate-x-1/2"
               style={{ width: '380px' }}
             >
               <div className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-xl p-4 shadow-[0_0_35px_rgba(16,185,129,0.5)] border-2 border-emerald-400/50">
@@ -1096,7 +1096,7 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 4.4 }}
-              className="absolute left-1/2 top-[4220px] -translate-x-1/2"
+              className="absolute left-1/2 top-[2745px] -translate-x-1/2"
               style={{ width: '380px' }}
             >
               <div className="bg-gradient-to-r from-teal-600 to-cyan-600 rounded-xl p-4 shadow-[0_0_35px_rgba(20,184,166,0.5)] border-2 border-teal-400/50">
@@ -1148,10 +1148,10 @@ export default function Phase2ScenarioPage() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 4.8 }}
-              className="absolute left-1/2 top-[4630px] -translate-x-1/2"
+              className="absolute left-1/2 top-[3155px] -translate-x-1/2"
               style={{ width: '400px' }}
             >
-              <div className="bg-gradient-to-br from-green-500 via-emerald-600 to-teal-600 rounded-xl p-5 shadow-[0_0_60px_rgba(16,185,129,0.7)] border-3 border-green-400/70">
+              <div className="bg-gradient-to-br from-green-500 via-emerald-600 to-teal-600 rounded-xl p-5 shadow-[0_0_50px_rgba(16,185,129,0.6)] border-3 border-green-400/60">
                 <div className="text-center mb-3">
                   <div className="text-4xl mb-2">🎉</div>
                   <p className="text-2xl font-black">Phase 2 완료!</p>
